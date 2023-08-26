@@ -1,0 +1,29 @@
+{
+    "name": "sumon/laravel-uique-slug",
+    "description": "A unique slug generator for laravel",
+    "type": "composer-plugin",
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "Sumon\\LaravelNuiqueSlugGenerator\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Betabloker",
+            "email": "72620275+Betabloker@users.noreply.github.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {},
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Sumon\\LaravelNuiqueSlugGenerator\\UniqueSlugServiceProvider"
+            ],
+            "aliases": {
+                "Debugbar": "Sumon\\LaravelNuiqueSlugGenerator\\UniqueSlugFacade"
+            }
+        }
+    }
+}
